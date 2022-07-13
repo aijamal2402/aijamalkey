@@ -1,0 +1,30 @@
+sudo apt install git - установка систем контроля версий 
+
+git --version - проверка версии 
+
+git confif --global user.email "myemail" -
+git confif --global user.name "myname" 
+
+git config --list - проверка настроек 
+
+ssh--keygen - создание ssh ключа 
+
+cat ~ssh/id_rsa.pub - получение ssh ключа 
+
+создаем репозиторий на github
+
+переходим в папку с проектом
+git init - превратить текущую директорию в git репозиторий 
+git remote add название связи (обычно - origin) ссылка на удаленный репозиторий (SSH: git@github:...)
+git remote -v - просмтор списка удаленных репозиторий 
+
+git status - проверка статуса фацлов
+git add название_файла - отслеживание конкретных файлов 
+git add . - отслеживанеи всех файлов 
+
+ git comimt - создание коммита (версий /слепка кода)
+
+git commit -m "описание версий" -созданеи коммита с комментарием 
+git push название_связи (обычно origin) название_ветки - отправка версии кода на удаленный репозиторий 
+напрмиер: git push origin master
+
